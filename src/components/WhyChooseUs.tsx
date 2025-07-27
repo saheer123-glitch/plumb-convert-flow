@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import emergencyService from "@/assets/emergency-service.jpg";
 
-const WhyChooseUs = ({ id }: { id?: string }) => {
+const WhyChooseUs = () => {
   const benefits = [
     {
       icon: Clock,
@@ -62,7 +62,7 @@ const WhyChooseUs = ({ id }: { id?: string }) => {
   ];
 
   return (
-    <section id={id} className="py-20 bg-background">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}

@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 
-const Contact = ({ id }: { id?: string }) => {
+const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -40,7 +40,7 @@ const Contact = ({ id }: { id?: string }) => {
   ];
 
   return (
-    <section id={id} className="py-20 bg-muted/30">
+    <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         {/* Emergency Call-to-Action */}
         <div className="bg-accent rounded-2xl p-8 text-center mb-16">
