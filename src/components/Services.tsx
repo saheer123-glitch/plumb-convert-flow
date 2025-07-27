@@ -11,7 +11,7 @@ import {
   ArrowRight
 } from "lucide-react";
 
-const Services = () => {
+const Services = ({ id }: { id?: string }) => {
   const services = [
     {
       icon: Droplets,
@@ -56,7 +56,7 @@ const Services = () => {
   };
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section id={id} className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
