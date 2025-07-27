@@ -57,12 +57,13 @@ const Hero = () => {
                 variant="emergency" 
                 size="xl" 
                 onClick={handleCall}
-                className="group"
+                className="group text-sm sm:text-lg"
               >
                 <Phone className="h-5 w-5 group-hover:animate-bounce" />
-                CALL NOW: (310) 627-2515
+                <span className="hidden sm:inline">CALL NOW: (310) 627-2515</span>
+                <span className="sm:hidden">CALL: (310) 627-2515</span>
               </Button>
-              <Button variant="outline" size="xl" className="border-white/30 text-white hover:bg-white/10">
+              <Button variant="cta" size="xl" className="text-sm sm:text-lg">
                 Get Free Estimate
               </Button>
             </div>
