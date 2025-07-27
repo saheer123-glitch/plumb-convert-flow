@@ -68,14 +68,15 @@ const Header = () => {
             </nav>
 
             {/* Desktop CTA */}
-            <div className="hidden md:flex items-center space-x-4">
-              <div className="text-right">
+            <div className="hidden md:flex items-center space-x-2 lg:space-x-4">
+              <div className="text-right hidden lg:block">
                 <p className="text-sm text-muted-foreground">24/7 Emergency</p>
                 <p className="text-lg font-bold text-primary">(310) 627-2515</p>
               </div>
-              <Button variant="emergency" onClick={handleCall}>
+              <Button variant="emergency" onClick={handleCall} size="sm" className="md:size-default">
                 <Phone className="h-4 w-4" />
-                Call Now
+                <span className="hidden lg:inline">Call Now</span>
+                <span className="lg:hidden">Call</span>
               </Button>
             </div>
 
@@ -117,7 +118,7 @@ const Header = () => {
                   Contact
                 </button>
                 <div className="pt-4 border-t">
-                  <Button variant="emergency" onClick={handleCall} className="w-full">
+                  <Button variant="emergency" onClick={handleCall} className="w-full text-sm">
                     <Phone className="h-4 w-4" />
                     Call (310) 627-2515
                   </Button>
