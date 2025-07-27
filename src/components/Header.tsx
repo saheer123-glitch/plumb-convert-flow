@@ -26,16 +26,16 @@ const Header = () => {
 
       {/* Main Navigation */}
       <header className="bg-white/95 backdrop-blur-sm border-b sticky top-0 z-50">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
+        <div className="container mx-auto px-2 sm:px-4">
+          <div className="flex items-center justify-between h-14 sm:h-16">
             {/* Logo */}
-            <div className="flex items-center space-x-2">
-              <div className="bg-primary text-white p-2 rounded-lg">
-                <Phone className="h-6 w-6" />
+            <div className="flex items-center space-x-1 sm:space-x-2">
+              <div className="bg-primary text-white p-1.5 sm:p-2 rounded-lg">
+                <Phone className="h-4 w-4 sm:h-6 sm:w-6" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-secondary">ASAP Plumbing</h1>
-                <p className="text-xs text-muted-foreground">Solutions</p>
+                <h1 className="text-sm sm:text-xl font-bold text-secondary">ASAP Plumbing</h1>
+                <p className="text-xs text-muted-foreground hidden sm:block">Solutions</p>
               </div>
             </div>
 
@@ -68,15 +68,14 @@ const Header = () => {
             </nav>
 
             {/* Desktop CTA */}
-            <div className="hidden md:flex items-center space-x-2 lg:space-x-4">
+            <div className="hidden md:flex items-center space-x-2">
               <div className="text-right hidden lg:block">
-                <p className="text-sm text-muted-foreground">24/7 Emergency</p>
-                <p className="text-lg font-bold text-primary">(310) 627-2515</p>
+                <p className="text-xs text-muted-foreground">24/7 Emergency</p>
+                <p className="text-sm font-bold text-primary">(310) 627-2515</p>
               </div>
-              <Button variant="emergency" onClick={handleCall} size="sm" className="md:size-default">
-                <Phone className="h-4 w-4" />
-                <span className="hidden lg:inline">Call Now</span>
-                <span className="lg:hidden">Call</span>
+              <Button variant="emergency" onClick={handleCall} size="sm">
+                <Phone className="h-3 w-3" />
+                Call
               </Button>
             </div>
 
@@ -118,8 +117,8 @@ const Header = () => {
                   Contact
                 </button>
                 <div className="pt-4 border-t">
-                  <Button variant="emergency" onClick={handleCall} className="w-full text-sm">
-                    <Phone className="h-4 w-4" />
+                  <Button variant="emergency" onClick={handleCall} className="w-full text-xs px-2 py-2">
+                    <Phone className="h-3 w-3" />
                     Call (310) 627-2515
                   </Button>
                 </div>
