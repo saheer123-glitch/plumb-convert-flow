@@ -16,60 +16,61 @@ const Hero = () => {
       />
       
       {/* Content */}
-      <div className="container mx-auto px-2 sm:px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div className="text-white space-y-4 sm:space-y-6 lg:space-y-8">
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="text-white space-y-8">
             {/* Emergency Badge */}
-            <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm border border-accent/30 rounded-full px-3 py-1.5 sm:px-4 sm:py-2">
-              <Clock className="h-3 w-3 sm:h-4 sm:w-4 text-accent" />
-              <span className="text-xs sm:text-sm font-medium">24/7 Emergency Service</span>
+            <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm border border-accent/30 rounded-full px-4 py-2">
+              <Clock className="h-4 w-4 text-accent" />
+              <span className="text-sm font-medium">24/7 Emergency Service</span>
             </div>
 
             {/* Main Headline */}
-            <div className="space-y-2 sm:space-y-4">
-              <h1 className="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+            <div className="space-y-4">
+              <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
                 Fast <span className="text-primary">Emergency</span> Plumbing in Los Angeles
               </h1>
-              <p className="text-sm sm:text-lg lg:text-xl text-white/90 max-w-lg">
+              <p className="text-xl text-white/90 max-w-lg">
                 Licensed & bonded plumbers with 20+ years experience. Same-day service guaranteed or you don't pay.
               </p>
             </div>
 
             {/* Trust Indicators */}
-            <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm">
-              <div className="flex items-center gap-1 sm:gap-2">
-                <Star className="h-3 w-3 sm:h-5 sm:w-5 text-accent fill-current" />
+            <div className="flex flex-wrap gap-6 text-sm">
+              <div className="flex items-center gap-2">
+                <Star className="h-5 w-5 text-accent fill-current" />
                 <span>5-Star Rated</span>
               </div>
-              <div className="flex items-center gap-1 sm:gap-2">
-                <Shield className="h-3 w-3 sm:h-5 sm:w-5 text-accent" />
+              <div className="flex items-center gap-2">
+                <Shield className="h-5 w-5 text-accent" />
                 <span>Licensed & Bonded</span>
               </div>
-              <div className="flex items-center gap-1 sm:gap-2">
-                <Clock className="h-3 w-3 sm:h-5 sm:w-5 text-accent" />
+              <div className="flex items-center gap-2">
+                <Clock className="h-5 w-5 text-accent" />
                 <span>Same Day Service</span>
               </div>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 variant="emergency" 
+                size="xl" 
                 onClick={handleCall}
-                className="group w-full sm:w-auto text-xs sm:text-sm lg:text-lg px-3 py-2 sm:px-4 sm:py-2 lg:px-8 lg:py-3"
+                className="group text-sm sm:text-lg"
               >
-                <Phone className="h-3 w-3 sm:h-4 sm:w-4 lg:h-5 lg:w-5 group-hover:animate-bounce" />
+                <Phone className="h-5 w-5 group-hover:animate-bounce" />
                 <span className="hidden sm:inline">CALL NOW: (310) 627-2515</span>
                 <span className="sm:hidden">CALL: (310) 627-2515</span>
               </Button>
-              <Button variant="cta" className="w-full sm:w-auto text-xs sm:text-sm lg:text-lg px-3 py-2 sm:px-4 sm:py-2 lg:px-8 lg:py-3">
+              <Button variant="cta" size="xl" className="text-sm sm:text-lg">
                 Get Free Estimate
               </Button>
             </div>
 
             {/* Guarantee */}
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-3 sm:p-4">
-              <p className="text-xs sm:text-sm font-medium">
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4">
+              <p className="text-sm font-medium">
                 <span className="text-accent">100% Satisfaction Guarantee</span> - If we can't fix it, you don't pay!
               </p>
             </div>
