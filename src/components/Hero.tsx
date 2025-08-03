@@ -10,7 +10,7 @@ const Hero = () => {
   const scrollToEstimate = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
-      const offset = window.innerHeight * 0.1; // 10% of viewport height offset
+      const offset = window.innerHeight * 0.2; // 20% of viewport height offset for better positioning
       const elementPosition = contactSection.offsetTop + offset;
       window.scrollTo({ 
         top: elementPosition, 
