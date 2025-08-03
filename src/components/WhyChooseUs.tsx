@@ -68,7 +68,7 @@ const WhyChooseUs = ({ id }: { id?: string }) => {
           {/* Left Content */}
           <div className="space-y-8">
             <div>
-              <Badge variant="outline" className="mb-4">Why ASAP Plumbing Solutions</Badge>
+              <Badge variant="outline" className="mb-4 text-lg px-4 py-2">Why ASAP Plumbing Solutions</Badge>
               <h2 className="text-4xl lg:text-5xl font-bold text-secondary mb-6">
                 Los Angeles' Most Trusted Plumbers
               </h2>
