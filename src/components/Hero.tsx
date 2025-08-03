@@ -7,6 +7,13 @@ const Hero = () => {
     window.location.href = "tel:+1-310-627-2515";
   };
 
+  const scrollToEstimate = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen bg-gradient-hero flex items-center overflow-hidden">
       {/* Background Image */}
@@ -63,7 +70,12 @@ const Hero = () => {
                 <span className="hidden sm:inline">CALL NOW: (310) 627-2515</span>
                 <span className="sm:hidden">CALL: (310) 627-2515</span>
               </Button>
-              <Button variant="cta" size="xl" className="text-sm sm:text-lg">
+              <Button 
+                variant="cta" 
+                size="xl" 
+                onClick={scrollToEstimate}
+                className="text-sm sm:text-lg"
+              >
                 Get Free Estimate
               </Button>
             </div>
