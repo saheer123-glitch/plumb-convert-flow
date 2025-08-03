@@ -94,8 +94,13 @@ const Services = ({ id }: { id?: string }) => {
                       </li>
                     ))}
                   </ul>
-                  <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-white">
-                    Learn More
+                  <Button 
+                    variant="outline" 
+                    className="w-full group-hover:bg-primary group-hover:text-white"
+                    onClick={handleCall}
+                  >
+                    <Phone className="h-4 w-4 mr-2" />
+                    Call Now
                   </Button>
                 </CardContent>
               </Card>
