@@ -29,10 +29,12 @@ const Header = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <div className="flex items-center space-x-2">
-              <div className="bg-primary text-white p-2 rounded-lg">
-                <Phone className="h-6 w-6" />
-              </div>
+            <div className="flex items-center space-x-3">
+              <img 
+                src="/lovable-uploads/6ec92ccd-9d1e-459f-8991-2a1b10dfc508.png" 
+                alt="ASAP Plumbing Solutions Logo" 
+                className="h-10 w-10 object-contain"
+              />
               <div>
                 <h1 className="text-xl font-bold text-secondary">ASAP Plumbing</h1>
                 <p className="text-xs text-muted-foreground">Solutions</p>
