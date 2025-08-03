@@ -109,9 +109,14 @@ const Services = ({ id }: { id?: string }) => {
           <p className="text-xl mb-6 opacity-90">
             Don't wait - plumbing emergencies get worse over time. Call now for immediate assistance!
           </p>
-          <Button variant="emergency" size="xl" onClick={handleCall} className="bg-white text-primary hover:bg-white/90">
-            <Phone className="h-5 w-5" />
-            EMERGENCY CALL: (310) 627-2515
+          <Button 
+            variant="emergency" 
+            size="xl" 
+            onClick={handleCall} 
+            className="bg-white text-primary hover:bg-white/90 w-full max-w-md mx-auto text-sm sm:text-base lg:text-lg px-4 sm:px-6 lg:px-8 py-3 sm:py-4"
+          >
+            <Phone className="h-4 w-4 sm:h-5 sm:w-5 mr-2 shrink-0" />
+            <span className="truncate">EMERGENCY CALL: (310) 627-2515</span>
           </Button>
         </div>
       </div>
