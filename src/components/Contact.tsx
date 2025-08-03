@@ -50,7 +50,7 @@ const Contact = ({ id }: { id?: string }) => {
           <p className="text-xl text-secondary/80 mb-6">
             Don't wait for a small problem to become a big disaster. Our emergency plumbers are standing by 24/7.
           </p>
-          <Button variant="emergency" size="xl" onClick={handleCall} className="bg-secondary text-white hover:bg-secondary/90">
+          <Button variant="emergency" size="xl" onClick={handleCall} className="bg-secondary text-white hover:bg-secondary/90 mx-auto w-full max-w-md">
             <Phone className="h-6 w-6" />
             CALL NOW: (310) 627-2515
           </Button>
